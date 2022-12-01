@@ -5,9 +5,9 @@ if __name__ == "__main__":
   if (nargs == 0):
    print("{:d} arguments.".format(nargs))
   elif (nargs == 1):
-   print("{:d} arguments.".format(nargs))
+   print("{:d} arguments:".format(nargs))
   else:
-   print("{:d} arguments.".format(nargs))
+   print("{:d} arguments:".format(nargs))
   for str in range (len(sys.argv)):
     if (str == 0):
     continue
