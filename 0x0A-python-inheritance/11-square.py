@@ -1,5 +1,3 @@
-s (13 sloc)  423 Bytes
-
 #!/usr/bin/python3
 
 """Defines a Rectangle subclass Square."""
