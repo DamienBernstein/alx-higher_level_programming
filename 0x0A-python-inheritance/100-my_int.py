@@ -1,5 +1,3 @@
-es (10 sloc)  368 Bytes
-
 #!/usr/bin/python3
 
 """Defines a class MyInt that inherits from int."""
