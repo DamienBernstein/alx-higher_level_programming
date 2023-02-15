@@ -5,6 +5,7 @@
 -- You can use only one SELECT statement
 -- The database name will be passed as an argument of the mysql command
 SELECT tv_shows.title, tv_show_genres.genre_id
-FROM tv_shows, tv_show_genres
-WHERE tv_shows.id = tv_show_genres.tv_show_id
+FROM tv_shows
+JOIN tv_show_genres ON tv_shows.id = tv_show_genres.tv_show_id
+WHERE tv_show_genres.genre_id IS NOT NULL
 ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
