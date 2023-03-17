@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """
 lists all cities of that state, using the database hbtn_0e_4_usa
 """
@@ -10,8 +10,8 @@ if __name__ == "__main__":
     c = db.cursor()
     c.execute("""SELECT * FROM cities
                 INNER JOIN states
-                ON cities.state_id = state.id
+                ON cities.state_id = states.id
                 ORDER BY cities.id""")
-    print(", " .join([city[2]
-                      for city in c.fetchall()
-                      if city[4] == sys.argv[4]]))
+    print(", ".join([city[2]
+                     for city in c.fetchall()
+                     if city[4] == sys.argv[4]]))
